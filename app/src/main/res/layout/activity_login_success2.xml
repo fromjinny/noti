@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/myiot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginSuccessActivity2">
+    <TextView
+        android:text="Welcome, "
+        android:fontFamily="@font/parisenne"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#FF6666"
+        android:id="@+id/textviewhello"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/infousername"
+        android:textSize="40dp"
+        android:fontFamily="@font/parisenne"
+        android:layout_alignLeft="@+id/textviewhello"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="165dp"
+        android:textColor="#404040"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/infopassword"
+        android:layout_below="@+id/infousername"
+        android:fontFamily="serif"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="#0000FF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/fingerfirebase"
+        android:layout_below="@+id/infopassword"
+        android:layout_marginTop="60dp"
+        android:hint="Enter your name for fingerprint"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/fingerfbid"
+        android:layout_below="@+id/fingerfirebase"
+        android:layout_marginTop="20dp"
+        android:hint="Enter your id (1-127)"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/confirmfirebase"
+        android:layout_below="@+id/fingerfbid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Upload"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:textColor="#FF007F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/homecontrol"
+        android:layout_marginLeft="115dp"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:text="Home Control"
+        android:textColor="#E15A16"
+        android:onClick="homecontrol"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/confirmfirebase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="OnClick" />
+    <Button
+        android:id="@+id/backtologin"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/confirmfirebase"
+        android:text="LOGOUT"
+        android:onClick="back"
+        android:layout_marginLeft="20dp"
+        android:textColor="#E15A16"
+        android:backgroundTint="#EEE8AA"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="OnClick" />
+    <Button
+        android:id="@+id/buttondelete"
+        android:layout_below="@+id/confirmfirebase"
+        android:text="DELETE ACCOUNT"
+        android:layout_marginLeft="250dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#E15A16"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

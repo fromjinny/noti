@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/myiot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity2">
+    <TextView
+        android:id="@+id/textviewreghere"
+        android:text="REGISTER HERE"
+        android:fontFamily="@font/lobsterbold"
+        android:layout_centerHorizontal="true"
+        android:textSize="53dp"
+        android:textColor="#ff6666"
+        android:layout_marginTop="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edittextreguser"
+
+        android:layout_below="@+id/textviewreghere"
+        android:hint="Please enter your username"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edittextregpass"
+
+        android:layout_below="@+id/edittextreguser"
+        android:hint="Please enter your password"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/editfullname"
+        android:layout_marginTop="25dp"
+
+        android:layout_below="@id/edittextregpass"
+        android:hint="Please enter your fullname"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/editemailaddress"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/editfullname"
+
+        android:hint="Please enter your email address"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/buttoncancel"
+        android:layout_below="@+id/editemailaddress"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:text="CANCEL"
+        android:onClick="cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="OnClick" />
+    <Button
+        android:id="@+id/buttonconfirm"
+        android:layout_below="@+id/editemailaddress"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:text="CONFIRM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
